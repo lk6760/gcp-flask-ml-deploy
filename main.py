@@ -21,8 +21,7 @@ def name(value):
 
 @app.route('/pandas')
 def pandas_sugar():
-    df = pd.read_csv("https://raw.githubusercontent.com/noahgift/sugar/master/data/e\
-    ducation_sugar_cdc_2003.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/noahgift/sugar/master/data/education_sugar_cdc_2003.csv")
     return jsonify(df.to_dict())
 
 
